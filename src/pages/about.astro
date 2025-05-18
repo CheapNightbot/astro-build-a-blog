@@ -1,4 +1,6 @@
 ---
+import "../styles/global.css";
+
 const pageTitle = "About Me 🐈️";
 
 const identity = {
@@ -16,6 +18,8 @@ const goal = 3;
 const skillColor = "navy";
 const fontWeight = "bold";
 const textCase = "uppercase";
+
+let potatoes = 0;
 ---
 
 <html lang="en">
@@ -88,5 +92,8 @@ const textCase = "uppercase";
                 <p>My goal is not 3 days.</p>
             )
         }
+
+        <p>I had {potatoes} {potatoes === 1 ? "potato" : "potatoes"}.</p>
+        <button id="feed-me">Feed me!</button>
     </body>
 </html>
