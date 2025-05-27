@@ -1,0 +1,26 @@
+---
+import Social from "./Social.astro";
+---
+
+<style>
+    footer {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        border-top: 2px solid;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        padding: 1rem;
+        gap: 1rem;
+        margin-top: 2rem;
+    }
+</style>
+
+<footer>
+    <Social platform="Twitter" username="CheapNightbot" />
+    <Social platform="GitHub" username="CheapNightbot" />
+    <Social platform="YouTube" username="@CheapNightbot" />
+</footer>
