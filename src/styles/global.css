@@ -14,6 +14,11 @@ html.dark {
     color: #fff;
 }
 
+
+.dark a {
+    color: #9b4eff;
+}
+
 body {
     margin: 0 auto;
     width: 100%;
