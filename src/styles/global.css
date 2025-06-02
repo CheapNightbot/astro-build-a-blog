@@ -1,11 +1,13 @@
 html {
     background-color: #f1f5f9;
     font-family: sans-serif;
+    transition: all .3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
 }
 
 html.dark {
-    background-color: #0d0950;
+    background-color: #1d1b22;
     color: #fff;
+    transition: all .3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
 }
 
 .dark .nav-links {
