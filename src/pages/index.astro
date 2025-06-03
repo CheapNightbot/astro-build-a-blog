@@ -1,10 +1,10 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import Greeting from "../components/Greeting";
+import FeedMe from "../components/FeedMe.astro";
 const pageTitle = "Home 🐈️";
 ---
 
 <BaseLayout pageTitle={pageTitle}>
 	<p>meow ?</p>
-	<Greeting client:load messages={["Hi", "Hello", "Howdy", "Hey there", "Ho", "Yo"]} />
+	<FeedMe />
 </BaseLayout>
