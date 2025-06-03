@@ -39,6 +39,12 @@ h1 {
 
 /* nav styles */
 
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .hamburger {
     padding-right: 20px;
     cursor: pointer;
