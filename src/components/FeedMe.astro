@@ -1,0 +1,48 @@
+---
+
+---
+
+<div>
+    <p>I had <span id="potatoes"></span> 🥔️ !</p>
+    <button id="feed-me">Feed me!</button>
+</div>
+
+<style>
+    #feed-me {
+        cursor: pointer;
+        border: none;
+        padding: 0.8rem 1rem;
+        color: whitesmoke !important;
+        background-color: #4c1d95;
+        text-decoration: none;
+        transition: 0.3s all cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    }
+
+    #feed-me: {
+        transform: translate(-1px, 1px);
+        box-shadow: none !important;
+    }
+
+    #feed-me:hover {
+        box-shadow: -0.2rem 0.2rem 0 1px violet;
+        transition: 0.3s all cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    }
+</style>
+
+<script is:inline>
+    const potatoesEl = document.querySelector("#potatoes");
+    let potatoes = parseInt(window.localStorage.getItem("potatoes")) || 0;
+
+    const updateDisplay = () => {
+        potatoesEl.innerText = `${potatoes} ${potatoes === 1 ? "potato" : "potatoes"}`;
+    };
+
+    const feedPotato = () => {
+        potatoes++;
+        window.localStorage.setItem("potatoes", potatoes);
+        updateDisplay();
+    };
+
+    updateDisplay();
+    document.querySelector("#feed-me")?.addEventListener("click", feedPotato);
+</script>
