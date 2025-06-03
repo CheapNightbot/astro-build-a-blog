@@ -4,10 +4,18 @@ import Navigation from "./Navigation.astro";
 import ThemeIcon from "./ThemeIcon.astro";
 ---
 
-<head>
+<header>
     <nav>
         <Hamburger />
         <Navigation />
         <ThemeIcon />
     </nav>
-</head>
+</header>
+
+<style>
+    header {
+        border-bottom: 1px solid;
+        margin-bottom: 2rem;
+        padding-bottom: 0.5rem;
+    }
+</style>
