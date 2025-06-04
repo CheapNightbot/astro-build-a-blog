@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/MarkdownPostLayout.astro
 title: My Second Blog Post
 author: Cheap Nightbot
 description: "After learning some Astro, me couldn't stop!"

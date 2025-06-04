@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/MarkdownPostLayout.astro
 title: My Third Blog Post
 author: Cheap Nightbot
 description: "Some doubts, but not really?"
